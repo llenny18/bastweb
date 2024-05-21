@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Full Disclosure - Batangas Province</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <div id="dateTime" style="color: white"></div>
+
+                    <script>
+                        function updateDateTime() {
+                            const now = new Date();
+                            const options = {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                                hour: 'numeric',
+                                minute: 'numeric',
+                                second: 'numeric',
+                                hour12: true
+                            };
+                            const dateTimeString = now.toLocaleString('en-US', options);
+                            document.getElementById('dateTime').textContent = dateTimeString;
+                        }
+                
+                        updateDateTime();
+                        setInterval(updateDateTime, 1000);
+                    </script>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img class="fa fa-map-marker-alt me-3" src="./img/batangas-logo-.png"></i>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">The Province</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="mission-vision.html" class="dropdown-item">Mission & Vision</a>
+                                <a href="socio-physical.html" class="dropdown-item">Socio-Economic and Physical Profile</a>
+                                <a href="census.html" class="dropdown-item">Census of Population</a>
+                              
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Government</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="officials.html" class="dropdown-item">Officials</a>
+                                <a href="full-disclosure.html" class="dropdown-item">Full Disclosure</a>
+                                <a href="gender-development.html" class="dropdown-item">Gender and Development</a>
+                                
+                                <a href="devolution-transition-plan.html" class="dropdown-item">Provincial Devolution
+                                    Transition Plan 2022-2024</a>
+                                <a href="bids-awards.html" class="dropdown-item">Bids and Awards</a>
+                                <a href="procurement-guidelines.html" class="dropdown-item">Procurement Guidelines During
+                                    State of Public Health Emergency</a>
+                                <a href="bidding-documents.html" class="dropdown-item">Philippine Bidding Documents</a>
+                                <a href="citizen-chart.html" class="dropdown-item">Citizen’s Charter</a>
+                                <a href="contact-center.html" class="dropdown-item">Contact Center ng Bayan</a>
+    
+                            </div>
+                        </div>
+                        <a href="district.html" class="nav-item nav-link">Districts</a>
+                        <a href="gallery.html" class="nav-item nav-link">Tourism</a>
+    
+    
+                    </div>
+                    <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Contact Us Now!</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Transparency</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-white">Transparency</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Packages Start -->
+        <div class="container-fluid packages py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Transparency</h5>
+                    <h1 class="mb-0">Transparency</h1>
+                </div>
+                <div class="packages-carousel owl-carousel">
+                    <div class="packages-item">
+                       
+                        <div class="packages-content bg-light">
+                            <div class="row bg-primary rounded-top mx-0">
+                                <div class="col-12 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Transparency Report 2022</a>
+                                </div>
+                               
+                            </div>
+                            <div class="p-4 pb-0" style="overflow-y: scroll; height: 400px;">
+                                <h5 class="mb-0"></h5>
+                       
+                                
+                                <ul>
+                                    <li><a href="https://drive.google.com/file/d/1RNCxmJ4LRGg9NO25fi_cIUFtunSxgzG0/view?usp=sharing" target="_blank">2022 General Fund Annual Budget</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Sy-gnus_f42mEKsh25FLoGVfADuTxmZP/view?usp=sharing" target="_blank">General Fund Supplemental Budget 1</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1jiaTtYTY04IH2pEEb-f-3hlHd83i_4oi/view?usp=sharing" target="_blank">SEF Fund 2022</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1SI06sxDuapNwcXEMSomEiFpYML_VkuS7/view?usp=sharing" target="_blank">Annual Procurement Plan 2022</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1BZ0694u9Mm3pnFgp6joFPAUk2gxK_hF-/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true">Annual Statement of Indebtedness, Payment And Balances</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/12eMMidpQOvNG-Uh11soWGYWKMS6V2vEA/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Statement of Debt Service 2021</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1tdkwnXqARcB3NA11R9JMgvRxv-DI-Vh-/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Statement of Receipts and Expenditures 2021</a></li>
+                               
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1e6wdfzjKehWtVkP0OIZpGHdb5FPCeEVh/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Supplemental Procurement Plan</a></li>
+                               
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1iPWtZxrdEPL7391GDy_kwfx3fsfeg8Uw/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">GAD Accomplishment Report and Summary</a></li>
+                               
+                               </ul>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                       
+                        <div class="packages-content bg-light">
+                            <div class="row bg-primary rounded-top mx-0">
+                                <div class="col-12 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">2022 Quarterly Reports</a>
+                                </div>
+                               
+                            </div>
+                            <div class="p-4 pb-0" style="overflow-y: scroll; height: 400px;">
+                                
+                                <small class="text-uppercase">1st Quarter 2022</small>
+                                <ul>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1hHqomffaiZ-l9_DyfkBCpBNWrwryZd5d/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/13xBgDioKSrpNi_ZwX9LQYe4QBuat9-a7/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                                   <li><a href="https://docs.google.com/spreadsheets/d/1A7HA03nIY47B7P3fnbcGm4mWZLDRoxu-/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Consolidated Statement Of Cash Flow</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1XX5eCelFopx3kmamK2KXG-b8fYObT2C8/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">SEF Utilization</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/18Mj7YF2BKouutI625RnnvyVx135vfAKQ/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">SEF Unliquidated Cash Advances</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1YKkbvAMNS7uC2JTrYeikeFkOAfsJW7c7/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Trust Fund Utilization</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1JMQPX-moPMe9QHLZHiXYZ_G-nvUUn-8S/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Trust Fund - Unliquidated Cash Advances</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1ij_oV9Sb-mMPIJfHGKf4mAkevCZfXUQo/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1Mk_G4Wb7PDvqwux4qWv3k_k-M7rgdm8C/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Bid Results</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1iHVerSJ4gUSXyBFUm61clsTPtbgfDDfn/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Manpower Complement</a></li>
+                               </ul>
+                               <br><small class="text-uppercase">2nd Quarter 2022</small>
+                               <ul>
+                                <li><a href="https://docs.google.com/spreadsheets/d/11JJ8OGZqljonkFzp1VXYo8pn-lnIMAAT/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1upLMIrDZ4psiYt9Xxw5_LPWhPBBoAD8w/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                               <li><a href="https://docs.google.com/spreadsheets/d/1XYpbxv8gte5RA_oEvNOE9hOs53QKfsTy/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Consolidated Statement Of Cash Flow</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1H3kEKNAt-KROJsz8-v7i2eS8cgwqSpOe/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">SEF Utilization</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1sNAij10pcEC2ffRRLNhunfDZMMbzODwH/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Trust Fund Utilization</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1c9JwU3ZrMny_hNFIGJ2HdV3cLsjPC1mk/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1bCabIoHDxjRxPLhQdxvBpVKOfmIWu7_6/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Bid Results on Goods and Services</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1AUj1dtCkVRsLVTdV9huLnsl5Bs4re6wB/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Manpower Complement</a></li>
+                           </ul>
+                            
+                           <br>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                       
+                        <div class="packages-content bg-light">
+                            <div class="row bg-primary rounded-top mx-0">
+                                <div class="col-12 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Transparency Report 2021</a>
+                                </div>
+                               
+                            </div>
+                            <div class="p-4 pb-0" style="overflow-y: scroll; height: 400px;">
+                                
+                           
+                                <ul>
+                                    <li><a href="https://drive.google.com/file/d/1bKbasf_10sSWMyITGwsp2lXU7qPQE-Eq/view?usp=sharing" target="_blank">Annual Budget Report</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Dsb3UxOdHwe2KE-xiH2vtzUuv43oARhC/view?usp=sharing" target="_blank">Statement of Debt Service</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Xkobv9SxZwYmG-nCCFpG6Fd2mkxXOhFj/view?usp=sharing" target="_blank">Statement of Indebtedness, Payment and Balances</a></li>
+                                   <li><a href="https://drive.google.com/file/d/1oBPa0PFQhsQWbJmu_UCwVQZZQRoGJ_qq/view?usp=sharing" target="_blank">Supplemental Procurement Plan</a></li>
+                                   <li><a href="https://docs.google.com/spreadsheets/d/1QzUkMu3cXf4D3rAB0CvABAq9UV4MJ1D3/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Statement of Receipts And Expenditures</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/1bKbasf_10sSWMyITGwsp2lXU7qPQE-Eq/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Annual Budget Report</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Q9M6TUmNHenDceXjrv1NhpgUY0k3yF8w/view?usp=sharing" target="_blank">General Fund Supplemental Budget 1</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1FfZqowb2zp4W-kLPOzSycrPnx80eJkkW/view?usp=sharing" target="_blank">General Fund Supplemental Budget 2</a></li>
+                                    <li><a href="https://docs.google.com/spreadsheets/d/16B9MNb45SwUBKtXdymrU0zU30WFKrxCo/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Annual Procurement Plan</a></li>
+                                    <li><a href="https://drive.google.com/file/d/19n-bOpAGvAOL4teRGZ-HMiF7uPpi-z6u/view?usp=sharing" target="_blank">GAD Accomplishment Report</a></li>
+                               </ul>
+                            
+
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                       
+                        <div class="packages-content bg-light">
+                            <div class="row bg-primary rounded-top mx-0">
+                                <div class="col-12 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">2021 Quarterly Reports</a>
+                                </div>
+                               
+                            </div>
+                            <div class="p-4 pb-0" style="overflow-y: scroll; height: 400px;">
+                                
+                                <small class="text-uppercase">1st Quarter 2021</small>
+                                <ul>
+                                    <li><a href="https://drive.google.com/file/d/169to0ouu6SKCRsQRsOncjuHYLGrMby5v/view?usp=sharing" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Vc-__-fge_BhUMvBPzMsc7VMmFktwJT3/view?usp=sharing" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                                   <li><a href="https://drive.google.com/file/d/17rmNn7QtxtX8v5LEDXJEX1dFf5Etg7t5/view?usp=sharing" target="_blank">Quarterly Statement Of Cash Flow</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1v361wiqioCg1wzMDyx3PDMQ9GFCJc8ho/view?usp=sharing" target="_blank">SEF Utilization</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1ds293b_twUii3qvsvUpjpFwyytwQP1y0/view?usp=sharing" target="_blank">Trust Fund Utilization</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Eua6-HQ6zgxjr2cg0zDT6PSJ5o-iH2gP/view?usp=sharing" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                                    <li><a href="https://drive.google.com/file/d/19c4vvtqcOIhZa91Q-1PNrtyHQEdtR4j8/view?usp=sharing" target="_blank">Manpower Complement</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1W3nT3o2bX_uo1aXCLaNXWxHCk52qOFF3/view?usp=sharing" target="_blank">Bid Results on Goods and Services</a></li>
+                               </ul>
+                               <br><small class="text-uppercase">2nd Quarter 2021</small>
+                               <ul>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1lTB4TNd6fkRHgYY2LG-otLP4abOyvLwD/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1HQR4Bj-LAfvdNYnQzooU3y5hwsyf92Xs/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                               <li><a href="https://docs.google.com/spreadsheets/d/1BN6C4B7lL5qVKL5esbg-oaSP91PNJKet/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Consolidated Statement Of Cash Flow</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/19D5oehRFHJn-7Un1KKxhtffyd_q3uJYR/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">SEF Utilization</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/18_tAFQZKN0P85vSmCsUrksyJAt3_IfTz/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Trust Fund Utilization</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1h5CAB4bfOmG6HE5SphsMKYc0HXFkHSP-/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Trust Fund Utilization - PDAF</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1f-r0asT09kdv4ykGjL7tDVR2SmyLcR2V/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1nb8RVm5LuUuNc9blYPfTMjcJhUvdJgOg/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - SEF</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/1FkAFvvBPAZ6gaNH7TbkQj9WZ3kYON189/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - Trust Fund</a></li>
+                                <li><a href="https://docs.google.com/spreadsheets/d/12dRVrm4W9JU6KSPAvATl3vEA0NnKv9Zy/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Bid Results on Goods and Services</a></li>
+                           </ul>
+                            
+                           <br><small class="text-uppercase">3rd Quarter 2021</small>
+                           
+                       <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/11pRnuRPBshBMu6kqAwpZzqHKXqNw4qTb/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1vd25obXW5QgkIQHANx2LSR8Cq2GNPJe9/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                       <li><a href="https://docs.google.com/spreadsheets/d/1H_HePBqnczHKHttxLCTCrGsFFCGxKCCn/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Consolidated Statement Of Cash Flow</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1UOMHbWriA2CoiPhwjIYxNXxL9z5nOWX2/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">SEF Utilization</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1dCi2jccttXjrYp_lE2kFENsgDpIAs3y6/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Trust Fund Utilization</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1MmthH1h-VVKX7vZYX7iPD3FyzmHfaQAQ/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1bc-iYlgQ1SvdVzI9hsyf1sSm3ADe40JU/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - SEF</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1gNj7oUW1RhbIBCBDNb618pN_rHHtwRhO/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - Trust Fund</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1TvWJL1WAmVJk7iTeCabaPP_GOokpbopK/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Bid Results on Goods and Services</a></li>
+                   </ul>
+                       <br><small class="text-uppercase">4th Quarter 2021</small>
+                       <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/11pRnuRPBshBMu6kqAwpZzqHKXqNw4qTb/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1vd25obXW5QgkIQHANx2LSR8Cq2GNPJe9/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                       <li><a href="https://docs.google.com/spreadsheets/d/1H_HePBqnczHKHttxLCTCrGsFFCGxKCCn/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Consolidated Statement Of Cash Flow</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1UOMHbWriA2CoiPhwjIYxNXxL9z5nOWX2/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">SEF Utilization</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1dCi2jccttXjrYp_lE2kFENsgDpIAs3y6/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Trust Fund Utilization</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1MmthH1h-VVKX7vZYX7iPD3FyzmHfaQAQ/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1bc-iYlgQ1SvdVzI9hsyf1sSm3ADe40JU/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - SEF</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1gNj7oUW1RhbIBCBDNb618pN_rHHtwRhO/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Unliquidated Cash Advances - Trust Fund</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1TvWJL1WAmVJk7iTeCabaPP_GOokpbopK/edit?usp=sharing&amp;ouid=116125501413289367881&amp;rtpof=true&amp;sd=true" target="_blank">Bid Results on Goods and Services</a></li>
+                   </ul>
+                    
+                   <br>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="packages-item">
+                       
+                        <div class="packages-content bg-light">
+                            <div class="row bg-primary rounded-top mx-0">
+                                <div class="col-12 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Transparency Report 2020</a>
+                                </div>
+                               
+                            </div>
+                            <div class="p-4 pb-0" style="overflow-y: scroll; height: 400px;">
+                                <ul>
+                                    <li><a href="https://drive.google.com/open?id=1JEJYkhmMSHvhq8-B7F6IOQ7rkcbRpw9m" target="_blank">Annual Budget 2020</a></li>
+                                    <li><a href="https://drive.google.com/open?id=1YSJlV1_mNGEUmQM0_iOnskEzIrkCvNm3" target="_blank">SEF Annual Budget 2020</a></li>
+                                   <li><a href="https://drive.google.com/open?id=1eOW4-6KvKwAw1AR-5G5bl2tnq97vrdY2" target="_blank">SEF Supplemental Budget No. 1 2020</a></li>
+                                   <li><a href="https://drive.google.com/file/d/1gwKjGe_WezADms89mVoxGF12lpw2m2l7/view?usp=sharing" target="_blank">Supplemental Budget No. 3 2020</a></li>
+                                   <li><a href="https://drive.google.com/file/d/1Bpp4drsaFRxBE8fLvaPFc1qxadQwLFil/view?usp=sharing" target="_blank">Supplemental Budget No. 4 2020</a></li>
+                                   <li><a href="https://drive.google.com/file/d/1GsRK4M0bTm03knqjBvoAsO2zId4UvVlM/view?usp=sharing" target="_blank">Supplemental Budget No. 5 2020</a></li>
+                                   <li><a href="https://drive.google.com/file/d/1OyuiMPrjwdU-0mylWDM07Bj9VdgOqaIV/view?usp=sharing" target="_blank">Supplemental Budget No. 6 2020</a></li>
+                                   <li><a href="https://drive.google.com/file/d/15gDKoLI_xJDx0ZtZRSgia5OaY2YOrDuO/view?usp=sharing" target="_blank">Supplemental Budget No. 7 2020</a></li>
+                                    <li><a href="https://drive.google.com/open?id=1c8_7bdUsM-Mh4MK8S48ZNjTf-_8-Cpux" target="_blank">Statement of Debt Service</a></li>
+                                    <li><a href="https://drive.google.com/file/d/12W1MeKraEx7y-Tr3LJXI3G9TSwr-9pOl/view?usp=sharing" target="_blank">Annual Gender and Development Report</a></li>
+                               </ul>
+                            
+
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="packages-item">
+                       
+                        <div class="packages-content bg-light">
+                            <div class="row bg-primary rounded-top mx-0">
+                                <div class="col-12 text-start px-0">
+                                    <a href="#" class="btn-hover btn text-white py-2 px-4">2020 Quarterly Reports</a>
+                                </div>
+                               
+                            </div>
+                            <div class="p-4 pb-0" style="overflow-y: scroll; height: 400px;">
+                                
+                                <small class="text-uppercase">1st Quarter 2020</small>
+                                <ul>
+                                    <li><a href="https://drive.google.com/file/d/10RCy2ukduclKc4CUEv5zLIxsRa8n-qP-/view?usp=sharing" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1VdyWcHYv9IiLu1AMUJICkKPSzXGvQcok/view?usp=sharing" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                                   <li><a href="https://drive.google.com/file/d/15RDdqKtZnM2MuDc20KfB8JAiFG7FSyrn/view?usp=sharing" target="_blank">Quarterly Statement Of Cash Flow</a></li>
+                                    <li><a href="https://drive.google.com/file/d/15RDdqKtZnM2MuDc20KfB8JAiFG7FSyrn/view?usp=sharing" target="_blank">SEF Unliquidated Cash Advances</a></li>
+                                    <li><a href="https://drive.google.com/file/d/15RDdqKtZnM2MuDc20KfB8JAiFG7FSyrn/view?usp=sharing" target="_blank">SEF Utilization</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1X9DZa-vDiQievJx2IzoOCzAE6PfeWnE2/view?usp=sharing" target="_blank">Trust Fund - PDAF Utilization</a></li>
+                                    <li><a href="https://drive.google.com/file/d/18SO-bl7hAO1nE69HHi3DpSUleFqioMJw/view?usp=sharing" target="_blank">Trust Fund Utilization</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1823aTze24Ec3iCGkKTVcxsxzGuNdewvo/view?usp=sharing" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1823aTze24Ec3iCGkKTVcxsxzGuNdewvo/view?usp=sharing" target="_blank">Unliquidated Cash Advances - Trust Fund</a></li>
+                               </ul>
+                               <br><small class="text-uppercase">2nd Quarter 2020</small>
+                               <ul>
+                                <li><a href="https://drive.google.com/file/d/10RCy2ukduclKc4CUEv5zLIxsRa8n-qP-/view?usp=sharing" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                                <li><a href="https://drive.google.com/file/d/1VdyWcHYv9IiLu1AMUJICkKPSzXGvQcok/view?usp=sharing" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                               <li><a href="https://drive.google.com/file/d/15RDdqKtZnM2MuDc20KfB8JAiFG7FSyrn/view?usp=sharing" target="_blank">Quarterly Statement Of Cash Flow</a></li>
+                                <li><a href="https://drive.google.com/file/d/15RDdqKtZnM2MuDc20KfB8JAiFG7FSyrn/view?usp=sharing" target="_blank">SEF Unliquidated Cash Advances</a></li>
+                                <li><a href="https://drive.google.com/file/d/15RDdqKtZnM2MuDc20KfB8JAiFG7FSyrn/view?usp=sharing" target="_blank">SEF Utilization</a></li>
+                                <li><a href="https://drive.google.com/file/d/1X9DZa-vDiQievJx2IzoOCzAE6PfeWnE2/view?usp=sharing" target="_blank">Trust Fund - PDAF Utilization</a></li>
+                                <li><a href="https://drive.google.com/file/d/18SO-bl7hAO1nE69HHi3DpSUleFqioMJw/view?usp=sharing" target="_blank">Trust Fund Utilization</a></li>
+                                <li><a href="https://drive.google.com/file/d/1823aTze24Ec3iCGkKTVcxsxzGuNdewvo/view?usp=sharing" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                                <li><a href="https://drive.google.com/file/d/1823aTze24Ec3iCGkKTVcxsxzGuNdewvo/view?usp=sharing" target="_blank">Unliquidated Cash Advances - Trust Fund</a></li>
+                           </ul>
+                            
+                           <br><small class="text-uppercase">3rd Quarter 2020</small>
+                           
+                           <ul>
+                            <li><a href="https://drive.google.com/file/d/1xmpaiVssIPwSdqrzJYzY813G5JmeNGtD/view?usp=sharing" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                            <li><a href="https://drive.google.com/file/d/11JPuLjiVmz7SV6mXzWSfQTQrbg-xqQ2X/view?usp=sharing" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                           <li><a href="https://drive.google.com/file/d/11mKAhwv9X_9DIbkZ6Uqqdj6T8C_qXZPp/view?usp=sharing" target="_blank">Quarterly Statement Of Cash Flow</a></li>
+                            <li><a href="https://drive.google.com/file/d/1KF63hwHt7COTckOzTHY31337quIuWCAT/view?usp=sharing" target="_blank">SEF Unliquidated Cash Advances</a></li>
+                            <li><a href="https://drive.google.com/file/d/1L80xk4e5JR98QGnO8qa019RfzVYSt569/view?usp=sharing" target="_blank">SEF Utilization</a></li>
+                            <li><a href="https://drive.google.com/file/d/1Nwl1eHa10qH9gw9rIWZufasmp_Wg0rIA/view?usp=sharing" target="_blank">Trust Fund - PDAF Utilization</a></li>
+                            <li><a href="https://drive.google.com/file/d/1ZKme8Co-9tWCzxNz_eCdMH7XgTiVSlYy/view?usp=sharing" target="_blank">Trust Fund Utilization</a></li>
+                            <li><a href="https://drive.google.com/file/d/1gsxZAVeAFWuV2DEr5tvnXWBPSYosoIaG/view?usp=sharing" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                            <li><a href="https://drive.google.com/file/d/1YI7s7ksA-ZxiOOonyvzNk9p6oidDAfxi/view?usp=sharing" target="_blank">Manpower Complement</a></li>
+                       </ul>
+                       <br><small class="text-uppercase">4th Quarter 2020</small>
+                       <ul>
+                        <li><a href="https://drive.google.com/file/d/1xmpaiVssIPwSdqrzJYzY813G5JmeNGtD/view?usp=sharing" target="_blank">20% Component Of The Internal Revenue Allotment Utilization</a></li>
+                        <li><a href="https://drive.google.com/file/d/11JPuLjiVmz7SV6mXzWSfQTQrbg-xqQ2X/view?usp=sharing" target="_blank">Local Disaster Risk And Reduction Management Fund Utilization</a></li>
+                       <li><a href="https://drive.google.com/file/d/11mKAhwv9X_9DIbkZ6Uqqdj6T8C_qXZPp/view?usp=sharing" target="_blank">Quarterly Statement Of Cash Flow</a></li>
+                        <li><a href="https://drive.google.com/file/d/1KF63hwHt7COTckOzTHY31337quIuWCAT/view?usp=sharing" target="_blank">SEF Unliquidated Cash Advances</a></li>
+                        <li><a href="https://drive.google.com/file/d/1L80xk4e5JR98QGnO8qa019RfzVYSt569/view?usp=sharing" target="_blank">SEF Utilization</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Nwl1eHa10qH9gw9rIWZufasmp_Wg0rIA/view?usp=sharing" target="_blank">Trust Fund - PDAF Utilization</a></li>
+                        <li><a href="https://drive.google.com/file/d/1ZKme8Co-9tWCzxNz_eCdMH7XgTiVSlYy/view?usp=sharing" target="_blank">Trust Fund Utilization</a></li>
+                        <li><a href="https://drive.google.com/file/d/1gsxZAVeAFWuV2DEr5tvnXWBPSYosoIaG/view?usp=sharing" target="_blank">Unliquidated Cash Advances - General Fund</a></li>
+                        <li><a href="https://drive.google.com/file/d/1YI7s7ksA-ZxiOOonyvzNk9p6oidDAfxi/view?usp=sharing" target="_blank">Manpower Complement</a></li>
+                   </ul>
+                    
+                   <br>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Packages End -->
+
+        <!-- Tour Booking Start -->
+        <div class="container-fluid booking py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h5 class="section-booking-title pe-3">Booking</h5>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.
+                        </p>
+                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.
+                        </p>
+                        <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="text-white mb-3">Book A Tour Deals</h1>
+                        <p class="text-white mb-4">Get <span class="text-warning">50% Off</span> On Your First Adventure Trip With Travela. Get More Deal Offers Here.</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-white border-0" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-white border-0" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-white border-0" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-white border-0" id="select1">
+                                            <option value="1">Destination 1</option>
+                                            <option value="2">Destination 2</option>
+                                            <option value="3">Destination 3</option>
+                                        </select>
+                                        <label for="select1">Destination</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-white border-0" id="SelectPerson">
+                                            <option value="1">Persons 1</option>
+                                            <option value="2">Persons 2</option>
+                                            <option value="3">Persons 3</option>
+                                        </select>
+                                        <label for="SelectPerson">Persons</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-white border-0" id="CategoriesSelect">
+                                            <option value="1">Kids</option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <label for="CategoriesSelect">Categories</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tour Booking End -->
+        
+        <!-- Subscribe Start -->
+       
+        <!-- Subscribe End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white text-center">All content is public domain unless otherwise stated.</h4>
+                        <img src="./img/logo2.png" alt="" srcset="">
+                    
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Company</h4>
+                        <a href="http://www.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Official Gazette</a>
+                        <a href="http://president.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> The President</a>
+                        <a href="http://op-proper.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Office of the President</a>
+                        <a href="http://ovp.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Office of the Vice President</a>
+                        <a href="http://senate.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Senate of the Philippines</a>
+                        <a href="http://www.congress.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> House of Representatives</a>
+                        <a href="http://sc.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Supreme Court</a>
+                        <a href="http://ca.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Court of Appeals</a>
+                        <a href="http://sb.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Sandiganbayan</a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column text-white">
+                        <h4 class="mb-4 text-white">CONTACT US</h4>
+                        <b>Provincial Government of Batangas</b> <br>
+                        Provincial Information Office<br>
+                         Main Address: Provincial Capitol Bldg., Batangas City, 4200, Batangas <br>
+                       Main Contact: (043) 723-4651
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

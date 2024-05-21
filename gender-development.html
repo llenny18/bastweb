@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Gender and Development - Batangas Province</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <div id="dateTime" style="color: white"></div>
+
+                    <script>
+                        function updateDateTime() {
+                            const now = new Date();
+                            const options = {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                                hour: 'numeric',
+                                minute: 'numeric',
+                                second: 'numeric',
+                                hour12: true
+                            };
+                            const dateTimeString = now.toLocaleString('en-US', options);
+                            document.getElementById('dateTime').textContent = dateTimeString;
+                        }
+                
+                        updateDateTime();
+                        setInterval(updateDateTime, 1000);
+                    </script>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img class="fa fa-map-marker-alt me-3" src="./img/batangas-logo-.png"></i>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">The Province</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="mission-vision.html" class="dropdown-item">Mission & Vision</a>
+                                <a href="socio-physical.html" class="dropdown-item">Socio-Economic and Physical Profile</a>
+                                <a href="census.html" class="dropdown-item">Census of Population</a>
+                              
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Government</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="officials.html" class="dropdown-item">Officials</a>
+                                <a href="full-disclosure.html" class="dropdown-item">Full Disclosure</a>
+                                <a href="gender-development.html" class="dropdown-item">Gender and Development</a>
+                                
+                                <a href="devolution-transition-plan.html" class="dropdown-item">Provincial Devolution
+                                    Transition Plan 2022-2024</a>
+                                <a href="bids-awards.html" class="dropdown-item">Bids and Awards</a>
+                                <a href="procurement-guidelines.html" class="dropdown-item">Procurement Guidelines During
+                                    State of Public Health Emergency</a>
+                                <a href="bidding-documents.html" class="dropdown-item">Philippine Bidding Documents</a>
+                                <a href="citizen-chart.html" class="dropdown-item">Citizen’s Charter</a>
+                                <a href="contact-center.html" class="dropdown-item">Contact Center ng Bayan</a>
+    
+                            </div>
+                        </div>
+                        <a href="district.html" class="nav-item nav-link">Districts</a>
+                        <a href="gallery.html" class="nav-item nav-link">Tourism</a>
+    
+    
+                    </div>
+                    <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Contact Us Now!</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Gender and Development</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-white">Gender and Development</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h3 class="section-title px-3">Gender and Development</h3>
+                 
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <div class="blog-img-inner">
+                                    <img class="img-fluid w-100 rounded-top" src="img/gd1.jpeg" alt="Image">
+                                    <div class="blog-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                                <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>April 3, 2024</small>
+                                    <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="fa fa-thumbs-up text-primary me-2"></i>4.2K</a>
+                                    <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="fa fa-comments text-primary me-2"></i>1.1K</a>
+                                </div>
+                            </div>
+                            <div class="blog-content border border-top-0 rounded-bottom p-4">
+                                <p class="mb-3">By Edwin V. Zabarte – Batangas Capitol PIO</p>
+                                <a href="#" class="h4">Konseho sa Proteksyon ng Kabataan, Nagtipon sa Kapitolyo</a>
+                                <p class="my-3" style="text-align: justify;">Muling tinipon ng Pamahalaang Panlalawigan ng Batangas ang mga miyembro ng Local Council for the Protection of Children (LCPC) para bigyang-daan ang mga nakalatag na plano at programa ng konseho na nakasentro sa proteksyon at kapakanan ng mga kabataan sa lalawigan.
+<br>
+<br>
+                                    Pangunahing tampok sa pagpupulong ang isyung ukol sa early teenage pregnancy, kung saan kabilang ang Batangas sa may mataas na bilang nito.
+                                    <br>
+<br>
+                                    Sa inisyatibo ng Provincial Social Welfare and Development Office (PSWDO), na tumatayong lead agency para sa programang ito, inilatag sa konseho ang mga pagpaplano ng mga aktibidad, na nakabatay sa inilabas na direktiba ng Department of the Interior and Local Government )DILG), ganun din ng 2024 LCPC functionality assessment para sa mga kaanib na mga ahensya.
+                                    <br>
+<br>
+                                    Naging bahagi din ng talakayan ang adoption ng Standard Lay-Out ng National Children Development Council sa pagpapatayo ng mga Child Development Centers sa lalawigan, ganun din ang proposed ordinance na magtatakda ng standard fee para sa pagsasagawa ng sertipikasyon at rekognisyon ng nakatayong child development centers, kasama ang mga pribadong uri ng children centers sa buong lalawigan.
+                                    <br>
+<br>
+                                    Nagganap din sa pagtitipon ang pagbabahagi ng mga commitment ng mga kasama sa konseho bilang ambag sa programa. Ang pagbabahaging ito ay inilahad sa harap ng council, sa pangunguna ni PSDWDO chief Florita Lachica at Batangas Province Sangguniang Kabataan Federation president, Board Member Voltaire Pua, kasama ang mga ahensya ng Kapitolyo at national agencies na kinabibilangan ng Deparment of Education, Philippine National Police, Department of Labor and Employment, SHARE Inc. at Lipa Archdiocesan Social Action Commission Inc.
+                                    <br>
+                                    <br>
+                                    Nakasentro sa pagpapaigting ng public awareness at malawakang information drive ang nakikitang unang hakbang upang maipabatid sa mga lokal na pamahalaan, partikular sa mga barangay at paaralan, ang mga saklaw ng Magna Carta for the Protection of Children.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <div class="blog-img-inner">
+                                    <img class="img-fluid w-100 rounded-top" src="img/gd2.jpg" alt="Image">
+                                    <div class="blog-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                                <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
+                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>28 Jan 2050</small>
+                                    <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i class="fa fa-thumbs-up text-primary me-2"></i>1.7K</a>
+                                    <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i class="fa fa-comments text-primary me-2"></i>1K</a>
+                                </div>
+                            </div>
+                            <div class="blog-content border border-top-0 rounded-bottom p-4">
+                                <p class="mb-3">By Gian Marco Escamillas, Batangas Capitol PIO / Photos by Macven Ocampo </p>
+                                <a href="#" class="h4">2024 Regional, Provincial Women’s Month Celebration, isinagawa sa Lalawigan ng Batangas</a>
+                                <p class="my-3">Pinangunahan ng Pamahalaang Panlalawigan ng Batangas, sa pamamagitan ng Provincial Social Welfare and Development Office (PSWDO), katuwang ang Batangas State University – The National Engineering University, at sa pakikipagtulungan ng Provincial Women Coordinating Council Batangas Inc. (PWCCBI), ang isinagawang 2024 Regional/Provincial Women’s Month Celebration noong ika-21 ng Marso 2024 sa Provincial Capitol Complex, Batangas City.
+                                    <br>
+                                    <br>
+                                    Maagang pinasimulan ang selebrasyon sa pamamagitan ng isang dance exercise sa Marble Terrace ng Kapitolyo, na nilahukan ng mga bisita at empleyado ng PSWDO.
+                                    <br>
+                                    <br>
+                                    Pagkatapos nito, isang programa ang ginanap sa Provincial Auditorium na may temang, “Lipunang Patas sa Bagong Pilipinas: Kakayahan ng Kababaihan, Patutunayan!” Ito ay dinaluhan ng mga delegado ng CALABARZON Regional Gender and Development Committee (RGADC) at mga kababaihan mula sa nabanggit na rehiyon.
+                                    <br>
+                                    <br>
+                                    Bagama’t hindi nakadalo sa taunang okasyon, ipinaabot ni Governor Hermilando Mandanas ang kanyang pagbati, sa pamamagitan ni PSWDO Head Florita Lachica, na patuloy na kumikilala sa kontribusyon at tagumpay ng bawat Filipina, partikular ng mga Batangueña, sa lipunan.
+                                    <br>
+                                    <br>
+                                    Samantala, suot ang kanyang baro na kulay lila na sumisimbolo sa gender equality at women empowerment, ibinahagi ni Vice Governor Mark Leviste na ang pagkakaroon ng compassion o ang paglilingkod ng may malasakit ay isang bagay na magandang matutunan mula sa mga kababaihan.
+                                    <br>
+                                    <br>
+                                    Nakiisa sa pagdiriwang ang mga babaeng mambabatas ng lalawigan na sina 6th District Senior Board Member Maria Claudette Ambida-Alday at Committee on Women and Family Chairperson BM Armie Bausas ng 1st District, kasama si 3rd District BM Alfredo Corona.
+                                    <br>
+                                    <br>
+                                    Binigyang-pagkakataon din na magbahagi ng mensahe sina Agoncillo Mayor Atty. Cinderella Valenton-Reyes, PCCWBI President at National Economic and Development Authority (NEDA) IV-A Regional Director Agnes E. Tolentino, na siya ring tumatayong RGADC Chairperson.
+                                    <br>
+                                    <br>
+                                    Sa naging pananalita ni Philippine Commission on Women (PCW) Deputy Executive Director Maria Kristine Josefina G. Balmes, inihayag niya na tumaas ang ranking ng Pilipinas sa Global Gender Gap Report ng World Economic Forum sa ika-16 na puwesto sa taong 2023, mula sa ika-19 na puwesto noong 2022. Ngunit aniya, hindi pa ito sapat na dahilan para magpahinga o tumigil sa laban para sa isang gender-equal na bansa na malayo sa anumang diskriminasyon.
+                                    <br>
+                                    <br>
+                                    Nagkaroon din ng serye ng mga talakayan sa tulong ng mga naimbitahang resource speakers patungkol sa mga suliranin na kinakaharap ng mga women with disability; ika-dalawampung taon ng Republic Act 9262 o “Anti-Violence Against Women and Their Children Act of 2004”; at Breast Care and Cancer Awareness.
+                                    <br>
+                                    <br>
+                                    Nagbigay-aliw naman ang mga estudyante ng Batangas Province High School for Culture and Arts sa kanilang inihandog na musical presentation na pinamagatang, “Babae Ka.”
+                                    Sa huling bahagi, ginawaran ang Top 20 entries ng Photo Essay Contest, kung saan nanguna ang litratong kuha ni Rishley Inlab Monares mula sa Kapayapaan Integrated School (Laguna) na may titulong “Architects of Society.” Nasa ikalawang puwesto ang entry ni Glenn Tiondo na, “Women in Agricultural Engineering,” habang nasa ikatlong puwesto ang larawan ni Stephanie Beatrice Marasigan na, “March-ing Past the Boundaries.”
+                                    <br>
+                                    <br>
+                                    Kasabay ng nasabing programa, inihatid ng Serbisyo para kay Juana ang libreng masahe, gupit, manicure at pedicure. Gayundin, muling binuksan ng Office of the Provincial Agriculturist (OPAg) ang Community Food Market sa Regina R. Mandanas Memorial DREAM Zone na kinatampukan ng mga women entrepreneurs ng lalawigan.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <div class="blog-img-inner text-center">
+                                    <h3>2023 Gender and Development Database</h3>
+                                    <iframe  width="1000" height="1000"  src="img/2023 Gender and Development (GAD) Database.pdf" alt="Image"></iframe>
+                                 
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <div class="blog-img-inner text-center">
+                                    <h3>Batangas GAD Code</h3>
+                                    <iframe  width="1000" height="1000" src="img/Batangas GAD Code.pdf" alt="Image"></iframe>
+                             
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Subscribe Start -->
+       
+        <!-- Subscribe End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white text-center">All content is public domain unless otherwise stated.</h4>
+                        <img src="./img/logo2.png" alt="" srcset="">
+                    
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Company</h4>
+                        <a href="http://www.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Official Gazette</a>
+                        <a href="http://president.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> The President</a>
+                        <a href="http://op-proper.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Office of the President</a>
+                        <a href="http://ovp.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Office of the Vice President</a>
+                        <a href="http://senate.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Senate of the Philippines</a>
+                        <a href="http://www.congress.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> House of Representatives</a>
+                        <a href="http://sc.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Supreme Court</a>
+                        <a href="http://ca.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Court of Appeals</a>
+                        <a href="http://sb.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Sandiganbayan</a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column text-white">
+                        <h4 class="mb-4 text-white">CONTACT US</h4>
+                        <b>Provincial Government of Batangas</b> <br>
+                        Provincial Information Office<br>
+                         Main Address: Provincial Capitol Bldg., Batangas City, 4200, Batangas <br>
+                       Main Contact: (043) 723-4651
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+       
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

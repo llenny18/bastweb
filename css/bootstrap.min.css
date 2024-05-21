@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #ce2829;
   --bs-indigo: #6610f2;
@@ -209,7 +204,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #0f2a62;
+  color: #610000;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -2607,14 +2602,14 @@ fieldset:disabled .btn {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #102d69;
-  border-color: #0f2a62;
+  background-color: #8b0000;
+  border-color: #610000;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: #102d69;
-  border-color: #0f2a62;
+  background-color: #8b0000;
+  border-color: #610000;
   box-shadow: 0 0 0 0.25rem rgba(54, 83, 143, 0.5);
 }
 .btn-check:checked + .btn-primary,
@@ -2623,8 +2618,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0f2a62;
-  border-color: #0e285c;
+  background-color: #610000;
+  border-color: white;
 }
 .btn-check:checked + .btn-primary:focus,
 .btn-check:active + .btn-primary:focus,
@@ -3190,7 +3185,7 @@ fieldset:disabled .btn {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #0f2a62;
+  color: #610000;
 }
 .btn-link:disabled,
 .btn-link.disabled {
@@ -3638,7 +3633,7 @@ fieldset:disabled .btn {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #0f2a62;
+  color: #610000;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4313,13 +4308,13 @@ fieldset:disabled .btn {
 }
 .page-link:hover {
   z-index: 2;
-  color: #0f2a62;
+  color: #610000;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #0f2a62;
+  color: #610000;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(19, 53, 123, 0.25);
@@ -5766,7 +5761,7 @@ fieldset:disabled .btn {
 }
 .link-primary:hover,
 .link-primary:focus {
-  color: #0f2a62;
+  color: #610000;
 }
 .link-secondary {
   color: #d83738;

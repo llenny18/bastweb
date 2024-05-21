@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Travela - Tourism Website Template</title>
+        <title>Tourism - Batangas Province</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -41,34 +41,35 @@
 
         <!-- Topbar Start -->
         <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-            <div class="row gx-0">
-                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
-                            <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <div id="dateTime" style="color: white"></div>
+
+                    <script>
+                        function updateDateTime() {
+                            const now = new Date();
+                            const options = {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                                hour: 'numeric',
+                                minute: 'numeric',
+                                second: 'numeric',
+                                hour12: true
+                            };
+                            const dateTimeString = now.toLocaleString('en-US', options);
+                            document.getElementById('dateTime').textContent = dateTimeString;
+                        }
+                
+                        updateDateTime();
+                        setInterval(updateDateTime, 1000);
+                    </script>
                 </div>
             </div>
+            
         </div>
+    </div>
         <!-- Topbar End -->
 
         <!-- Navbar & Hero Start -->
@@ -83,50 +84,36 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">The Province</a>
                             <div class="dropdown-menu m-0">
-                                <a href="misvis.html" class="dropdown-item">Mission & Vision</a>
-                                <a href="tour.html" class="dropdown-item">Socio-Economic and Physical Profile</a>
-                                <a href="booking.html" class="dropdown-item">Census of Population</a>
+                                <a href="mission-vision.html" class="dropdown-item">Mission & Vision</a>
+                                <a href="socio-physical.html" class="dropdown-item">Socio-Economic and Physical Profile</a>
+                                <a href="census.html" class="dropdown-item">Census of Population</a>
                               
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Government</a>
                             <div class="dropdown-menu m-0">
-                                <a href="full-disclosure.html" class="dropdown-item">Officials</a>
+                                <a href="officials.html" class="dropdown-item">Officials</a>
                                 <a href="full-disclosure.html" class="dropdown-item">Full Disclosure</a>
                                 <a href="gender-development.html" class="dropdown-item">Gender and Development</a>
-                                <a href="provincial-development-framework.html" class="dropdown-item">Provincial Development
-                                    and Physical Framework Plan</a>
+                                
                                 <a href="devolution-transition-plan.html" class="dropdown-item">Provincial Devolution
                                     Transition Plan 2022-2024</a>
                                 <a href="bids-awards.html" class="dropdown-item">Bids and Awards</a>
                                 <a href="procurement-guidelines.html" class="dropdown-item">Procurement Guidelines During
                                     State of Public Health Emergency</a>
                                 <a href="bidding-documents.html" class="dropdown-item">Philippine Bidding Documents</a>
-                                <a href="citizens-charter.html" class="dropdown-item">Citizen’s Charter</a>
-                                <a href="contact-center-bayan.html" class="dropdown-item">Contact Center ng Bayan</a>
+                                <a href="citizen-chart.html" class="dropdown-item">Citizen’s Charter</a>
+                                <a href="contact-center.html" class="dropdown-item">Contact Center ng Bayan</a>
     
                             </div>
                         </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cities and
-                                Municipalities</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="district1.html" class="dropdown-item">District I</a>
-                                <a href="district2.html" class="dropdown-item">District II</a>
-                                <a href="district3.html" class="dropdown-item">District III</a>
-                                <a href="district4.html" class="dropdown-item">District IV</a>
-                                <a href="district5.html" class="dropdown-item">District V</a>
-                                <a href="district6.html" class="dropdown-item">District VI</a>
-                                
-                            </div>
-                        </div>
-    
-                        <a href="gallery.html" class="nav-item nav-link">Tourism</a>
+                        <a href="district.html" class="nav-item nav-link">Districts</a>
+                        <a href="gallery.html" class="nav-item nav-link active">Tourism</a>
     
     
                     </div>
@@ -139,11 +126,10 @@
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4">Our Gallery</h1>
+                <h3 class="text-white display-3 mb-4">Batangas Tourism</h1>
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-white">Gallery</li>
+                    <li class="breadcrumb-item active text-white">Tourism</li>
                 </ol>    
             </div>
         </div>
@@ -345,20 +331,7 @@
         <!-- Gallery End -->
 
         <!-- Subscribe Start -->
-        <div class="container-fluid subscribe py-5">
-            <div class="container text-center py-5">
-                <div class="mx-auto text-center" style="max-width: 900px;">
-                    <h5 class="subscribe-title px-3">Subscribe</h5>
-                    <h1 class="text-white mb-4">Our Newsletter</h1>
-                    <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
-                    </p>
-                    <div class="position-relative mx-auto">
-                        <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <!-- Subscribe End -->
 
         <!-- Footer Start -->
@@ -403,22 +376,7 @@
         <!-- Footer End -->
         
         <!-- Copyright Start -->
-        <div class="container-fluid copyright text-body py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Your Site Name</a>, All right reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-start">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- Copyright End -->
 
         <!-- Back to Top -->
