@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Travela - Tourism Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+   
+    
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <div id="dateTime" style="color: white"></div>
+
+                        <script>
+                            function updateDateTime() {
+                                const now = new Date();
+                                const options = {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric',
+                                    hour: 'numeric',
+                                    minute: 'numeric',
+                                    second: 'numeric',
+                                    hour12: true
+                                };
+                                const dateTimeString = now.toLocaleString('en-US', options);
+                                document.getElementById('dateTime').textContent = dateTimeString;
+                            }
+                    
+                            updateDateTime();
+                            setInterval(updateDateTime, 1000);
+                        </script>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img class="fa fa-map-marker-alt me-3" src="./img/batangas-logo-.png"></i>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">The Province</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="misvis.html" class="dropdown-item">Mission & Vision</a>
+                                <a href="tour.html" class="dropdown-item">Socio-Economic and Physical Profile</a>
+                                <a href="booking.html" class="dropdown-item">Census of Population</a>
+                              
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Government</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="full-disclosure.html" class="dropdown-item">Officials</a>
+                                <a href="full-disclosure.html" class="dropdown-item">Full Disclosure</a>
+                                <a href="gender-development.html" class="dropdown-item">Gender and Development</a>
+                                <a href="provincial-development-framework.html" class="dropdown-item">Provincial Development
+                                    and Physical Framework Plan</a>
+                                <a href="devolution-transition-plan.html" class="dropdown-item">Provincial Devolution
+                                    Transition Plan 2022-2024</a>
+                                <a href="bids-awards.html" class="dropdown-item">Bids and Awards</a>
+                                <a href="procurement-guidelines.html" class="dropdown-item">Procurement Guidelines During
+                                    State of Public Health Emergency</a>
+                                <a href="bidding-documents.html" class="dropdown-item">Philippine Bidding Documents</a>
+                                <a href="citizens-charter.html" class="dropdown-item">Citizen’s Charter</a>
+                                <a href="contact-center-bayan.html" class="dropdown-item">Contact Center ng Bayan</a>
+    
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cities and
+                                Municipalities</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="district1.html" class="dropdown-item">District I</a>
+                                <a href="district2.html" class="dropdown-item">District II</a>
+                                <a href="district3.html" class="dropdown-item">District III</a>
+                                <a href="district4.html" class="dropdown-item">District IV</a>
+                                <a href="district5.html" class="dropdown-item">District V</a>
+                                <a href="district6.html" class="dropdown-item">District VI</a>
+                                
+                            </div>
+                        </div>
+    
+                        <a href="gallery.html" class="nav-item nav-link">Tourism</a>
+    
+    
+                    </div>
+                    <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Contact Us Now!</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">CBatangas Province Contacts</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Contact</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid contact bg-light py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Contact Us</h5>
+                    <h1 class="mb-0">Contact of Every Official</h1>
+                </div>
+                <div class="row g-5 align-items-center text-center">
+                    <table id="example" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Head</th>
+                                <th>Department / Office</th>
+                                <th>Telephone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gov. Hermilando I. Mandanas<br>Maria Isabel B. Bejasa (Chief of Staff)</td>
+                                <td>Office of the Provincial Governor</td>
+                                <td>703-0115, 702-2509, 702-2069, 786-1288</td>
+                            </tr>
+                            <tr>
+                                <td>Vice-Gov. Jose Antonio Leviste II</td>
+                                <td>Office of the Vice Governor</td>
+                                <td>702-9886</td>
+                            </tr>
+                            <tr>
+                                <td>Nelson M. Bayani (Secretary to the Sangguniang)</td>
+                                <td>Sangguniang Panlalawigan</td>
+                                <td>786-0139</td>
+                            </tr>
+                            <tr>
+                                <td>Wilfredo D. Racelis</td>
+                                <td>Office of the Provincial Administrator</td>
+                                <td>706-6540, 706-6520, 702-9754</td>
+                            </tr>
+                            <tr>
+                                <td>Dra. Rosvilinda M. Ozaeta</td>
+                                <td>Provincial Health Office</td>
+                                <td>723-0728, 722-0882, 723-0894</td>
+                            </tr>
+                            <tr>
+                                <td>Florta C. Lachica, RSW</td>
+                                <td>Provincial Social Welfare and Development Office</td>
+                                <td>723-4024, 723-6921, 723-7906, 723-8918, 984-2059, 723-3779</td>
+                            </tr>
+                            <tr>
+                                <td>Fresdwinna R. Mendoza</td>
+                                <td>Provincial Assistance for Community Development</td>
+                                <td>980-0845, 980-0844</td>
+                            </tr>
+                            <tr>
+                                <td>Maria Isabel B. Bejasa</td>
+                                <td>Provincial Information Office</td>
+                                <td>723-4651</td>
+                            </tr>
+                            <tr>
+                                <td>Katrin Erika A. Buted</td>
+                                <td>Provincial Tourism and Cultural Affairs Office</td>
+                                <td>724-5435</td>
+                            </tr>
+                            <tr>
+                                <td>Celia L. Atienza</td>
+                                <td>Provincial Cooperative, Livelihood and Enterprise Development</td>
+                                <td>300-4377, 722-1079, 723-1739</td>
+                            </tr>
+                            <tr>
+                                <td>Marisa M. Mendoza</td>
+                                <td>Provincial Planning and Development Office</td>
+                                <td>722-2359, 706-4654, 706-4655, 786-0568, 706-1085</td>
+                            </tr>
+                            <tr>
+                                <td>Rhiza B. de Zosa</td>
+                                <td>Provincial Human Resource Management Office</td>
+                                <td>723-5781, 726-0330</td>
+                            </tr>
+                            <tr>
+                                <td>Martes S. Castillo</td>
+                                <td>Office of the Provincial Accountant</td>
+                                <td>722-0221, 727-2139</td>
+                            </tr>
+                            <tr>
+                                <td>Engr. Eduardo B. Cedo</td>
+                                <td>Office of the Provincial Assessor</td>
+                                <td>723-0897, 706-6199, 702-5120, 706-6192, 706-6193</td>
+                            </tr>
+                            <tr>
+                                <td>Victoria B. Culiat</td>
+                                <td>Provincial Budget Office</td>
+                                <td>722-0732, 726-0258, 702-3309, 702-7483</td>
+                            </tr>
+                            <tr>
+                                <td>Fortunata G. Lat</td>
+                                <td>Office of the Provincial Treasurer</td>
+                                <td>723-0632, 702-6818, 722-3222, 723-4394, 723-6105</td>
+                            </tr>
+                            <tr>
+                                <td>Paulita M. Maneja</td>
+                                <td>General Services Office</td>
+                                <td>980-5970, 702-5935, 706-5263, 706-5262, 984-3519, 706-5261, 984-3598</td>
+                            </tr>
+                            <tr>
+                                <td>Engr. Gilbert P. Gatdula</td>
+                                <td>Provincial Engineer's Office</td>
+                                <td>402-5841</td>
+                            </tr>
+                            <tr>
+                                <td>Luis A. Awitan</td>
+                                <td>Environment and Natural Resources Office</td>
+                                <td>724-6553, 786-1245</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Romelito R. Marasigan</td>
+                                <td>Office of the Provincial Veterinarian</td>
+                                <td>740-8538, 740-9743</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Rodrigo M. Bautista Jr.</td>
+                                <td>Office of the Provincial Agriculturist</td>
+                                <td>740-4892, 722-2207, 722-2075</td>
+                            </tr>
+                            <tr>
+                                <td>Atty. Cesar L. Castor, Sr.</td>
+                                <td>Provincial Legal Office</td>
+                                <td>723-1997, 723-9722</td>
+                            </tr>
+                            <tr>
+                                <td>Lourdes G. Ramirez-Zapanta</td>
+                                <td>Office of the Provincial Prosecutor</td>
+                                <td>722-0512</td>
+                            </tr>
+                            <tr>
+                                <td>Atty. Genaro S. Cabral</td>
+                                <td>Provincial Public Order and Safety Services Department</td>
+                                <td>723-0230, 723-9951</td>
+                            </tr>
+                            <tr>
+                                <td>Gina L. Ferriols</td>
+                                <td>Provincial School Board</td>
+                                <td>984-3110</td>
+                            </tr>
+                            <tr>
+                                <td>Rosita V. Masangkay</td>
+                                <td>Provincial Library</td>
+                                <td>984-5532</td>
+                            </tr>
+                            <tr>
+                                <td>Amor Banuelos-Calayan, PHD</td>
+                                <td>Provincial Disaster Risk Reduction and Management Office</td>
+                                <td>786-0593, 706-8573, 723-9350</td>
+                            </tr>
+                            <tr>
+                                <td>Atty. Genaro S. Cabral (OIC)</td>
+                                <td>Provincial Jail</td>
+                                <td>723-3102</td>
+                            </tr>
+                            <tr>
+                                <td>Atty. Virgilio L. Macasaet, Jr.</td>
+                                <td>Internal Audit</td>
+                                <td>783-0993</td>
+                            </tr>
+                            <tr>
+                                <td>Atty. Mary Remie Jane T. Marasigan-Ambida</td>
+                                <td>BAC</td>
+                                <td>408-8163</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+          <!-- jQuery -->
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Bootstrap Bundle JS (includes Popper) -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- DataTables JS -->
+     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+     <!-- DataTables Initialization -->
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+        <div class="container-fluid subscribe py-5">
+            <div class="container text-center py-5">
+                <div class="mx-auto text-center" style="max-width: 900px;">
+                    <h5 class="subscribe-title px-3">Subscribe</h5>
+                    <h1 class="text-white mb-4">Our Newsletter</h1>
+                    <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
+                    </p>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white text-center">All content is public domain unless otherwise stated.</h4>
+                            <img src="./img/logo2.png" alt="" srcset="">
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Company</h4>
+                            <a href="http://www.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Official Gazette</a>
+                            <a href="http://president.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> The President</a>
+                            <a href="http://op-proper.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Office of the President</a>
+                            <a href="http://ovp.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Office of the Vice President</a>
+                            <a href="http://senate.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Senate of the Philippines</a>
+                            <a href="http://www.congress.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> House of Representatives</a>
+                            <a href="http://sc.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Supreme Court</a>
+                            <a href="http://ca.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Court of Appeals</a>
+                            <a href="http://sb.judiciary.gov.ph/" target="_blank" rel="noopener"><i class="fas fa-angle-right me-2"></i> Sandiganbayan</a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column text-white">
+                            <h4 class="mb-4 text-white">CONTACT US</h4>
+                            <b>Provincial Government of Batangas</b> <br>
+                            Provincial Information Office<br>
+                             Main Address: Provincial Capitol Bldg., Batangas City, 4200, Batangas <br>
+                           Main Contact: (043) 723-4651
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright text-body py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Your Site Name</a>, All right reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-start">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
